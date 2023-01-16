@@ -17,8 +17,7 @@ function filterCards() {
 function hasContent(card) {
   let filter = normalizeText(filterElement.value)
   let title = normalizeText(card.querySelector('h2').textContent)
-  title.includes(filter) ?
-    card.style.display = "block" : card.style.display = "none"
+  title.includes(filter) ? card.style.display = "block" : card.style.display = "none"
 }
 
 function normalizeText(text) {
